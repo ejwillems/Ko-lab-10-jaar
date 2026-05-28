@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Jaar Ko-Lab Hackerspace!</title>
+    <style>
+        /* Hacker/Cyberpunk Thema Styling */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Courier New', Courier, monospace; }
+        body { line-height: 1.6; color: #00ff00; background-color: #0d0d0d; }
+        .container { width: 85%; max-width: 1000px; margin: 0 auto; }
+        
+        /* Navigatie */
+        header { background: #1a1a1a; border-bottom: 2px solid #00ff00; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo { font-size: 20px; font-weight: bold; color: #00ff00; text-transform: uppercase; }
+        .nav-links { list-style: none; display: flex; }
+        .nav-links li { margin-left: 20px; }
+        .nav-links a { text-decoration: none; color: #888; font-weight: bold; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #00ff00; text-shadow: 0 0 10px #00ff00; }
+
+        /* Hero Sectie */
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 1px dashed #00ff00; pt: 80px; }
+        .hero-content h1 { font-size: 40px; margin-bottom: 20px; color: #ffffff; text-shadow: 0 0 15px #00ff00; }
+        .hero-content p { font-size: 18px; margin-bottom: 30px; color: #00ff00; }
+        .btn { display: inline-block; background: transparent; color: #00ff00; padding: 12px 30px; text-decoration: none; border: 2px solid #00ff00; font-weight: bold; border-radius: 4px; transition: all 0.3s ease; cursor: pointer; }
+        .btn:hover { background: #00ff00; color: #0d0d0d; box-shadow: 0 0 20px #00ff00; }
+        .btn-disabled { border-color: #444; color: #444; cursor: not-allowed; pointer-events: none; }
+
+        /* Secties Algemeen */
+        section { padding: 80px 0; border-bottom: 1px dashed #333; }
+        section h2 { text-align: center; font-size: 28px; margin-bottom: 40px; color: #fff; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* Programma Tijdlijn */
+        .timeline { max-width: 700px; margin: 0 auto; }
+        .timeline-item { background: #141414; border: 1px solid #333; padding: 20px; margin-bottom: 20px; border-left: 4px solid #00ff00; border-radius: 0 4px 4px 0; }
+        .timeline-item h3 { color: #fff; margin-bottom: 5px; font-size: 18px; }
+        .timeline-item .time { color: #00ff00; font-weight: bold; margin-bottom: 10px; display: block; }
+        .placeholder-text { font-style: italic; color: #888; border: 1px dashed #444; padding: 10px; margin-top: 10px; text-align: center; }
+
+        /* Locatie Grid */
+        .locatie-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center; }
+        .locatie-info h3 { color: #fff; margin-bottom: 15px; }
+        .map-responsive { overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0; border: 2px solid #333; }
+        .map-responsive iframe { left: 0; top: 0; height: 100%; width: 100%; position: absolute; filter: grayscale(100%) invert(90%); }
+        
+        /* Footer */
+        footer { background: #0d0d0d; text-align: center; padding: 40px 0; font-size: 12px; color: #444; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigatie -->
+    <header>
+        <nav class="container">
+            <div class="logo">sudo ./10_years_hackerspace</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programma">Programma</a></li>
+                <li><a href="#locatie">Locatie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Sectie -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>10 JAAR KO-LAB HACKERSPACE</h1>
+            <p>[!] Zaterdag 10 oktober 2026 | De Loods, Mechelen</p>
+            <p>Vier een decennium van open source, hardware hacking en community met ons.</p>
+            <a href="#programma" class="btn">Bekijk Programma</a>
+        </div>
+    </section>
+
+    <!-- Programma Sectie -->
+    <section id="programma">
+        <div class="container">
+            <h2>Programma</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <span class="time">14:00</span>
+                    <h3>Deuren Open</h3>
+                    <p>Inloop, drankje en setup van de eerste hacks & talks.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time">Overdag</span>
+                    <h3>Talks & Workshops</h3>
+                    <p>Inspirerende presentaties en hands-on sessies.</p>
+                    <div class="placeholder-text">
+                        [!] Status: Loading... Het complete programma komt binnenkort online op deze pagina.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time">Avond</span>
+                    <h3>BBQ</h3>
+                    <p>Gezellig samen eten en verhalen van de afgelopen 10 jaar ophalen. Vegetarische/vegan opties worden voorzien.</p>
+                    <div style="margin-top: 15px;">
+                        <button class="btn btn-disabled">Inschrijvingslink volgt binnenkort</button>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="time">Late Avond</span>
+                    <h3>Activiteiten & Chillen</h3>
+                    <p>We sluiten de dag af met hacker jeopardy en gezellig chillen.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Locatie Sectie -->
+    <section id="locatie">
+        <div class="container">
+            <h2>Locatie & Coördinaten</h2>
+            <div class="locatie-content">
+                <div class="locatie-info">
+                    <h3>De Loods (Transit M)</h3>
+                    <p>Douaneplein 4</p>
+                    <p>2800 Mechelen</p>
+                    <br>
+                    <p><em>Makkelijk bereikbaar met de fiets, het openbaar vervoer of de wagen (gratis parkeren op het Douaneplein).</em></p>
+                </div>
+                <div class="map-responsive">
+                    <iframe src="https://openstreetmap.org" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&gt;_ Loop voltooid. Hackerspace 2016 - 2026. Made with HTML/CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
